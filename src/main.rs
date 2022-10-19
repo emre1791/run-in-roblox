@@ -63,7 +63,7 @@ fn run(options: Options) -> Result<i32, anyhow::Error> {
     let server_id = format!("run-in-roblox-{:x}", rand::random::<u128>());
 
     let place_runner = PlaceRunner {
-        port: 50312,
+        port: 7005,
         place_path: temp_place_path.clone(),
         server_id: server_id.clone(),
         lua_script: script_contents.clone(),
